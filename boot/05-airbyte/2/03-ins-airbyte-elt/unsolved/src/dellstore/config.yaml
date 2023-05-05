@@ -1,0 +1,6 @@
+extract_load:
+  model_path: "dellstore/models/extract"
+transform: 
+  model_path: "dellstore/models/transform"
+meta: 
+  log_table: "pipeline_logs"

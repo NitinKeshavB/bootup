@@ -1,0 +1,20 @@
+metrics:
+  - name: sum_order_qty
+    label: sum_order_qty # this is what is displayed 
+    sql_expression: sum(orderqty)
+  
+  - name: avg_order_qty
+    label: avg_order_qty # this is what is displayed 
+    sql_expression: avg(orderqty)
+  
+  - name: sum_high_class_order_qty
+    label: sum_high_class_order_qtysum_order_qty
+    sql_expression: sum(case when class = 'H' then orderqty else 0 end)
+
+  - name: sum_net_quantity
+    label: sum_net_quantity
+    sql_expression: sum(orderqty - scrappedqty)
+  
+  - name: max_order_qty
+    label: max_order_qty
+    sql_expression: max(orderqty)

@@ -1,0 +1,99 @@
+definition_type: connection
+resource_name: octavia_example3
+source_configuration_path: sources/openweather/configuration.yaml
+destination_configuration_path: destinations/dw_0001/configuration.yaml
+configuration:
+  sync_catalog:
+    streams:
+    - stream:
+        name: one_call
+        json_schema:
+          type: object
+          $schema: http://json-schema.org/draft-07/schema#
+          properties:
+            lat:
+              type: number
+            lon:
+              type: number
+            daily:
+              type: array
+            alerts:
+              type: array
+            hourly:
+              type: array
+            current:
+              type: object
+              properties:
+                dt:
+                  type: number
+                uvi:
+                  type: number
+                rain:
+                  type: object
+                  properties:
+                    1h:
+                      type: number
+                temp:
+                  type: number
+                clouds:
+                  type: number
+                sunset:
+                  type: number
+                sunrise:
+                  type: number
+                weather:
+                  type: array
+                humidity:
+                  type: number
+                pressure:
+                  type: number
+                wind_deg:
+                  type: number
+                dew_point:
+                  type: number
+                feels_like:
+                  type: number
+                visibility:
+                  type: number
+                wind_speed:
+                  type: number
+            minutely:
+              type: array
+            timezone:
+              type: string
+            timezone_offset:
+              type: number
+        supported_sync_modes:
+        - full_refresh
+        - incremental
+        source_defined_cursor: true
+        default_cursor_field:
+        - current
+        - dt
+        source_defined_primary_key: []
+      config:
+        sync_mode: incremental
+        destination_sync_mode: append
+        cursor_field:
+        - current
+        - dt
+        primary_key:
+        - - current
+          - dt
+        - - lat
+        - - lon
+        alias_name: one_call
+        selected: true
+  status: active
+  namespace_definition: source
+  namespace_format: ${SOURCE_NAMESPACE}
+  prefix: ''
+  schedule:
+    units: 24
+    time_unit: hours
+  operations:
+  - name: Normalization
+    operator_configuration:
+      operator_type: normalization
+      normalization:
+        option: basic

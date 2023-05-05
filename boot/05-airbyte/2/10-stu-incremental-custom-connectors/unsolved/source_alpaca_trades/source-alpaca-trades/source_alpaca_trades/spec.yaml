@@ -1,0 +1,24 @@
+documentationUrl: https://docsurl.com
+connectionSpecification:
+  $schema: http://json-schema.org/draft-07/schema#
+  title: Alpaca Trades Spec
+  type: object
+  required:
+    - api_key_id
+    - api_secret_key
+    - symbol
+    - start_date
+  properties:
+    api_key_id:
+      type: string
+      description: api key id 
+    api_secret_key:
+      type: string
+      description: api secret key 
+    symbol:
+      type: string
+      description: stock symbol
+    start_date:
+      type: string
+      description: start date
+    

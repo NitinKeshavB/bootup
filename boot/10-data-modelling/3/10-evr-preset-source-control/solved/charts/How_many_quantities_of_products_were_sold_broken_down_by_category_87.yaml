@@ -1,0 +1,111 @@
+slice_name: How many quantities of products were sold broken down by category?
+viz_type: dist_bar
+params:
+  adhoc_filters: []
+  applied_time_extras: {}
+  bottom_margin: auto
+  color_scheme: supersetColors
+  columns: []
+  dashboards: []
+  datasource: 25__table
+  granularity_sqla: date_day
+  groupby:
+  - product_category_name
+  metrics:
+  - sum_orderqty
+  order_desc: true
+  rich_tooltip: true
+  row_limit: 10000
+  show_legend: true
+  slice_id: 86
+  standardizedFormData:
+    controls:
+      columns: []
+      metrics: []
+    memorizedFormData:
+    - - table
+      - adhoc_filters: []
+        applied_time_extras: {}
+        datasource: 25__table
+        metrics:
+        - sum_revenue
+        time_grain_sqla: P1M
+        time_range: No filter
+        url_params:
+          dataset_id: '25'
+          dataset_type: table
+        viz_type: table
+    - - echarts_timeseries_bar
+      - adhoc_filters: []
+        annotation_layers: []
+        applied_time_extras: {}
+        color_scheme: supersetColors
+        comparison_type: values
+        dashboards: []
+        datasource: 25__table
+        emit_filter: true
+        forecastInterval: 0.8
+        forecastPeriods: 10
+        granularity_sqla: date_day
+        groupby: []
+        legendOrientation: top
+        legendType: scroll
+        metrics:
+        - sum_orderqty
+        only_total: true
+        orientation: vertical
+        rich_tooltip: true
+        row_limit: 10000
+        show_empty_columns: true
+        show_legend: true
+        slice_id: 85
+        standardizedFormData:
+          controls:
+            columns: []
+            metrics: []
+          memorizedFormData:
+          - - table
+            - adhoc_filters: []
+              applied_time_extras: {}
+              datasource: 25__table
+              metrics:
+              - sum_revenue
+              time_grain_sqla: P1M
+              time_range: No filter
+              url_params:
+                dataset_id: '25'
+                dataset_type: table
+              viz_type: table
+        time_grain_sqla: P1M
+        time_range: No filter
+        timeseries_limit_metric: []
+        tooltipTimeFormat: smart_date
+        truncate_metric: true
+        url_params:
+          dataset_id: '25'
+          dataset_type: table
+          datasource_id: '25'
+          datasource_type: table
+          save_action: overwrite
+          slice_id: '85'
+        viz_type: echarts_timeseries_bar
+        x_axis_time_format: smart_date
+        x_axis_title_margin: 15
+        y_axis_bounds:
+        - null
+        - null
+        y_axis_format: SMART_NUMBER
+        y_axis_title_margin: 15
+        y_axis_title_position: Left
+  time_range: No filter
+  timeseries_limit_metric: []
+  viz_type: dist_bar
+  x_ticks_layout: auto
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+cache_timeout: null
+uuid: 8e956c6e-38ec-4a73-9dd8-42576c0c12a2
+version: 1.0.0
+dataset_uuid: 032dd1cb-ebd9-4dd2-a10b-6feac92871d6

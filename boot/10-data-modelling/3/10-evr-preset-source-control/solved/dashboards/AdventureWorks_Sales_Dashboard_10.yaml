@@ -1,0 +1,212 @@
+dashboard_title: AdventureWorks Sales Dashboard
+description: null
+css: ''
+slug: null
+uuid: 76809278-19b4-449d-ba3c-71291f0dc1a1
+position:
+  CHART-0prpS0w1ny:
+    children: []
+    id: CHART-0prpS0w1ny
+    meta:
+      chartId: 86
+      height: 50
+      sliceName: What was the average unit price of products by subcategory?
+      uuid: cc375bd3-af17-4086-b44f-7efa50c323a6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VEFpdsfvpK
+    type: CHART
+  CHART-1Oh1UPXhT8:
+    children: []
+    id: CHART-1Oh1UPXhT8
+    meta:
+      chartId: 88
+      height: 50
+      sliceName: What was the total sales for the 'Vista' card type?
+      uuid: 1abfbd70-ada4-4860-bf54-d3f48f39d78a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SgbvYg6Z88
+    - COLUMN-eEjOC8mtAx
+    - ROW-49-MYPbEVU
+    - COLUMN-NPEcKlrnD8
+    type: CHART
+  CHART-LGLqlh-liq:
+    children: []
+    id: CHART-LGLqlh-liq
+    meta:
+      chartId: 89
+      height: 50
+      sliceName: What was the sales broken down by country?
+      uuid: b8e3db1c-4f77-4588-9f7a-e335083183bc
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SgbvYg6Z88
+    - COLUMN-77ozGXKr6u
+    type: CHART
+  CHART-sSj3DMXkWF:
+    children: []
+    id: CHART-sSj3DMXkWF
+    meta:
+      chartId: 85
+      height: 50
+      sliceName: What was my sales broken down by months?
+      uuid: de927ccd-8606-4b61-814b-9e9b509aa815
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VEFpdsfvpK
+    type: CHART
+  CHART-u3tFv3dL0L:
+    children: []
+    id: CHART-u3tFv3dL0L
+    meta:
+      chartId: 87
+      height: 50
+      sliceName: How many quantities of products were sold broken down by category?
+      uuid: 8e956c6e-38ec-4a73-9dd8-42576c0c12a2
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SgbvYg6Z88
+    - COLUMN-HaHG6DUz06
+    type: CHART
+  COLUMN-77ozGXKr6u:
+    children:
+    - CHART-LGLqlh-liq
+    id: COLUMN-77ozGXKr6u
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SgbvYg6Z88
+    type: COLUMN
+  COLUMN-HaHG6DUz06:
+    children:
+    - CHART-u3tFv3dL0L
+    id: COLUMN-HaHG6DUz06
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SgbvYg6Z88
+    type: COLUMN
+  COLUMN-NPEcKlrnD8:
+    children:
+    - CHART-1Oh1UPXhT8
+    id: COLUMN-NPEcKlrnD8
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SgbvYg6Z88
+    - COLUMN-eEjOC8mtAx
+    - ROW-49-MYPbEVU
+    type: COLUMN
+  COLUMN-eEjOC8mtAx:
+    children:
+    - ROW-49-MYPbEVU
+    id: COLUMN-eEjOC8mtAx
+    meta:
+      background: BACKGROUND_TRANSPARENT
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SgbvYg6Z88
+    type: COLUMN
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-SgbvYg6Z88
+    - ROW-VEFpdsfvpK
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: AdventureWorks Sales Dashboard
+    type: HEADER
+  MARKDOWN-UREhVTZ3hh:
+    children: []
+    id: MARKDOWN-UREhVTZ3hh
+    meta:
+      height: 50
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VEFpdsfvpK
+    type: MARKDOWN
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-49-MYPbEVU:
+    children:
+    - COLUMN-NPEcKlrnD8
+    id: ROW-49-MYPbEVU
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-SgbvYg6Z88
+    - COLUMN-eEjOC8mtAx
+    type: ROW
+  ROW-SgbvYg6Z88:
+    children:
+    - COLUMN-77ozGXKr6u
+    - COLUMN-eEjOC8mtAx
+    - COLUMN-HaHG6DUz06
+    id: ROW-SgbvYg6Z88
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-VEFpdsfvpK:
+    children:
+    - CHART-0prpS0w1ny
+    - CHART-sSj3DMXkWF
+    - MARKDOWN-UREhVTZ3hh
+    id: ROW-VEFpdsfvpK
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  show_native_filters: true
+  chart_configuration: {}
+  color_scheme: ''
+  refresh_frequency: 0
+  shared_label_colors:
+    sum_orderqty: '#1FA8C9'
+    avg_unitprice: '#1FA8C9'
+    sum_revenue: '#1FA8C9'
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  default_filters: '{}'
+version: 1.0.0

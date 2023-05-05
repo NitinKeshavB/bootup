@@ -1,0 +1,275 @@
+table_name: obt_workorder
+main_dttm_col: start_date
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: serving
+sql: ''
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+uuid: ed5a974b-100d-46a1-ba2e-6e93a321584c
+metrics:
+- metric_name: sum_high_class_order_qty
+  verbose_name: sum_high_class_order_qty
+  metric_type: null
+  expression: sum(case when class = 'H' then orderqty else 0 end)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: sum_net_quantity
+  verbose_name: sum_net_quantity
+  metric_type: null
+  expression: sum(orderqty - scrappedqty)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: null
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: std_dev_order_qty
+  verbose_name: std_dev_order_qty
+  metric_type: null
+  expression: stddev(orderqty)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: mean_order_qty
+  verbose_name: avg_order_qty
+  metric_type: null
+  expression: avg(orderqty)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: sum_order_qty
+  verbose_name: sum_order_qty
+  metric_type: null
+  expression: sum(orderqty)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: max_order_qty
+  verbose_name: max_order_qty
+  metric_type: null
+  expression: max(orderqty)
+  description: null
+  d3format: null
+  extra: {}
+  warning_text: null
+columns:
+- column_name: color
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: VARCHAR(15)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: productnumber
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: VARCHAR(25)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: class
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: CHAR(2)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: product_subcategory_name
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: VARCHAR
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: product_category_name
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: VARCHAR
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: product_name
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: VARCHAR
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: name
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: VARCHAR
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: start_date
+  verbose_name: null
+  is_dttm: true
+  is_active: null
+  type: DATE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: end_date
+  verbose_name: null
+  is_dttm: true
+  is_active: null
+  type: DATE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: due_date
+  verbose_name: null
+  is_dttm: true
+  is_active: null
+  type: DATE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: scrappedqty
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: SMALLINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: scrapreasonid
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: productid
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: workorderid
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: orderqty
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+version: 1.0.0
+database_uuid: ad8efb24-2a59-436d-9ed6-ae29b3cee70d

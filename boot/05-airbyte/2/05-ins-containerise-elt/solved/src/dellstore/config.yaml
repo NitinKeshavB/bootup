@@ -1,0 +1,7 @@
+extract_load:
+  host: "localhost:8000"
+  connection_id: "e1d4f7e3-842d-46dc-a658-45d51c160706"
+transform: 
+  model_path: "dellstore/models/transform"
+meta: 
+  log_table: "pipeline_logs"

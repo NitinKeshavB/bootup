@@ -1,0 +1,7 @@
+extract_load: 
+  host: "localhost:8000"
+  connection_id: "42480d44-e539-4fb5-b076-c2ad909e73f8"
+transform: 
+  model_path: "dvd_rental/models/transform"
+meta: 
+  log_table: "pipeline_logs"

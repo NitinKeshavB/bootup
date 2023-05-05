@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "required": ["api_key_id", "api_secret_key", "symbol"],
+    "properties": {
+        "symbol": {
+            "type": "string"
+        },
+        "trades": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "t": {
+                        "type": ["null", "string"]
+                    },
+                    "x": {
+                        "type": ["null", "string"]
+                    },
+                    "p": {
+                        "type": ["null", "string"]
+                    },
+                    "s": {
+                        "type": ["null", "string"]
+                    },
+                    "c": {
+                        "type": ["null", "string"]
+                    },
+                    "i": {
+                        "type": ["null", "string"]
+                    },
+                    "z": {
+                        "type": ["null", "string"]
+                    }
+                }
+            }
+        }
+    }
+}

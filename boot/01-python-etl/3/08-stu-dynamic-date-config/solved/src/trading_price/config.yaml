@@ -1,0 +1,15 @@
+extract:
+  stock_ticker: "tsla"
+  date_picker: "days_from_start"
+  start_date: "2020-01-01"
+  days_from_start: 5
+
+load:
+  file: 
+    load_target: "file"
+    target_file_directory: "trading_price/data"
+    target_file_name: "tesla.parquet"
+  database:
+    load_target: "database"
+    target_table_name: "tesla_stock"
+

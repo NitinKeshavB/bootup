@@ -1,0 +1,2 @@
+-- 1. show the top 10 customers based on average amount spent per rental, and their total_rental and total_amount_spent figures 
+-- note: same query as Q4 of the previous activity. You will need to refactor the existing query using CTEs. 

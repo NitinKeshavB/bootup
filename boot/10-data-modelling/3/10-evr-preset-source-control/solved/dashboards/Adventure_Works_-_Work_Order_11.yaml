@@ -1,0 +1,92 @@
+dashboard_title: Adventure Works - Work Order
+description: null
+css: ''
+slug: null
+uuid: e54f6f31-69d9-492c-827f-de4c5acc1b73
+position:
+  CHART-ODYCtyppyM:
+    children: []
+    id: CHART-ODYCtyppyM
+    meta:
+      chartId: 84
+      height: 50
+      sliceName: sum_net_order_qty_by_month
+      uuid: c677fb8b-fc66-4a71-9c69-2001ff027c43
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-osj-maQh2K
+    type: CHART
+  CHART-eu5DoEkGjc:
+    children: []
+    id: CHART-eu5DoEkGjc
+    meta:
+      chartId: 83
+      height: 50
+      sliceName: sum_order_qty_by_month
+      uuid: 7e4122e1-f7e0-4fb8-a462-29f601e31520
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-osj-maQh2K
+    type: CHART
+  CHART-qYJUuFiARi:
+    children: []
+    id: CHART-qYJUuFiARi
+    meta:
+      chartId: 80
+      height: 50
+      sliceName: sum_order_qty
+      uuid: 74879e47-71b0-4901-bfcf-28f34c133b42
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-osj-maQh2K
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-osj-maQh2K
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Adventure Works - Work Order
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-osj-maQh2K:
+    children:
+    - CHART-ODYCtyppyM
+    - CHART-eu5DoEkGjc
+    - CHART-qYJUuFiARi
+    id: ROW-osj-maQh2K
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  show_native_filters: true
+  chart_configuration: {}
+  color_scheme: ''
+  refresh_frequency: 0
+  shared_label_colors:
+    sum_net_quantity: '#1FA8C9'
+    sum_order_qty: '#1FA8C9'
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  default_filters: '{}'
+version: 1.0.0

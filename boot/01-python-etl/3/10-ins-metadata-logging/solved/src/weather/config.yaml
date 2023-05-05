@@ -1,0 +1,16 @@
+extract:
+  fp_cities: "weather/data/australian_capital_cities.csv"
+  temperature_units: "metric"
+  fp_population: "weather/data/australian_city_population.csv"
+
+load:
+  file: 
+    load_target: "file"
+    load_method: "upsert"
+    target_file_directory: "weather/data"
+    target_file_name: "weather.parquet"
+  database:
+    load_target: "database"
+    load_method: "upsert"
+    target_table_name: "weather"
+

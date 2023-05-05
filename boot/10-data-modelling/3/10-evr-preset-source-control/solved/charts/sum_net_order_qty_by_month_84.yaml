@@ -1,0 +1,45 @@
+slice_name: sum_net_order_qty_by_month
+viz_type: echarts_timeseries_bar
+params:
+  adhoc_filters: []
+  annotation_layers: []
+  applied_time_extras: {}
+  color_scheme: supersetColors
+  comparison_type: values
+  dashboards:
+  - 8
+  datasource: 24__table
+  emit_filter: true
+  forecastInterval: 0.8
+  forecastPeriods: 10
+  granularity_sqla: start_date
+  groupby: []
+  legendOrientation: top
+  legendType: scroll
+  metrics:
+  - sum_net_quantity
+  only_total: true
+  orientation: vertical
+  rich_tooltip: true
+  row_limit: 10000
+  show_empty_columns: true
+  show_legend: true
+  slice_id: 84
+  time_grain_sqla: P1M
+  time_range: No filter
+  timeseries_limit_metric: []
+  tooltipTimeFormat: smart_date
+  truncate_metric: true
+  viz_type: echarts_timeseries_bar
+  x_axis_time_format: smart_date
+  x_axis_title_margin: 15
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+cache_timeout: null
+uuid: c677fb8b-fc66-4a71-9c69-2001ff027c43
+version: 1.0.0
+dataset_uuid: ed5a974b-100d-46a1-ba2e-6e93a321584c

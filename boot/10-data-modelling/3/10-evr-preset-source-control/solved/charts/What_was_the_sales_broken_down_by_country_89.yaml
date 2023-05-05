@@ -1,0 +1,414 @@
+slice_name: What was the sales broken down by country?
+viz_type: world_map
+params:
+  datasource: 25__table
+  viz_type: world_map
+  slice_id: 88
+  granularity_sqla: date_day
+  time_range: No filter
+  entity: country_name
+  country_fieldtype: name
+  metric: sum_revenue
+  adhoc_filters: []
+  row_limit: 10000
+  max_bubble_size: '25'
+  color_picker:
+    r: 0
+    g: 122
+    b: 135
+    a: 1
+  color_by: metric
+  linear_color_scheme: superset_seq_1
+  color_scheme: supersetColors
+  standardizedFormData:
+    controls:
+      metrics: []
+      columns: []
+    memorizedFormData:
+    - - table
+      - adhoc_filters: []
+        applied_time_extras: {}
+        datasource: 25__table
+        metrics:
+        - sum_revenue
+        time_grain_sqla: P1M
+        time_range: No filter
+        url_params:
+          dataset_id: '25'
+          dataset_type: table
+        viz_type: table
+    - - echarts_timeseries_bar
+      - adhoc_filters: []
+        annotation_layers: []
+        applied_time_extras: {}
+        color_scheme: supersetColors
+        comparison_type: values
+        dashboards: []
+        datasource: 25__table
+        emit_filter: true
+        forecastInterval: 0.8
+        forecastPeriods: 10
+        granularity_sqla: date_day
+        groupby: []
+        legendOrientation: top
+        legendType: scroll
+        metrics:
+        - sum_orderqty
+        only_total: true
+        orientation: vertical
+        rich_tooltip: true
+        row_limit: 10000
+        show_empty_columns: true
+        show_legend: true
+        slice_id: 85
+        standardizedFormData:
+          controls:
+            columns: []
+            metrics: []
+          memorizedFormData:
+          - - table
+            - adhoc_filters: []
+              applied_time_extras: {}
+              datasource: 25__table
+              metrics:
+              - sum_revenue
+              time_grain_sqla: P1M
+              time_range: No filter
+              url_params:
+                dataset_id: '25'
+                dataset_type: table
+              viz_type: table
+        time_grain_sqla: P1M
+        time_range: No filter
+        timeseries_limit_metric: []
+        tooltipTimeFormat: smart_date
+        truncate_metric: true
+        url_params:
+          dataset_id: '25'
+          dataset_type: table
+          datasource_id: '25'
+          datasource_type: table
+          save_action: overwrite
+          slice_id: '85'
+        viz_type: echarts_timeseries_bar
+        x_axis_time_format: smart_date
+        x_axis_title_margin: 15
+        y_axis_bounds:
+        - null
+        - null
+        y_axis_format: SMART_NUMBER
+        y_axis_title_margin: 15
+        y_axis_title_position: Left
+    - - dist_bar
+      - adhoc_filters: []
+        applied_time_extras: {}
+        bottom_margin: auto
+        color_scheme: supersetColors
+        columns: []
+        dashboards: []
+        datasource: 25__table
+        granularity_sqla: date_day
+        groupby: []
+        metrics:
+        - sum_revenue_for_vista
+        order_desc: true
+        rich_tooltip: true
+        row_limit: 10000
+        show_legend: true
+        slice_id: 86
+        standardizedFormData:
+          controls:
+            columns: []
+            metrics: []
+          memorizedFormData:
+          - - table
+            - adhoc_filters: []
+              applied_time_extras: {}
+              datasource: 25__table
+              metrics:
+              - sum_revenue
+              time_grain_sqla: P1M
+              time_range: No filter
+              url_params:
+                dataset_id: '25'
+                dataset_type: table
+              viz_type: table
+          - - echarts_timeseries_bar
+            - adhoc_filters: []
+              annotation_layers: []
+              applied_time_extras: {}
+              color_scheme: supersetColors
+              comparison_type: values
+              dashboards: []
+              datasource: 25__table
+              emit_filter: true
+              forecastInterval: 0.8
+              forecastPeriods: 10
+              granularity_sqla: date_day
+              groupby: []
+              legendOrientation: top
+              legendType: scroll
+              metrics:
+              - sum_orderqty
+              only_total: true
+              orientation: vertical
+              rich_tooltip: true
+              row_limit: 10000
+              show_empty_columns: true
+              show_legend: true
+              slice_id: 85
+              standardizedFormData:
+                controls:
+                  columns: []
+                  metrics: []
+                memorizedFormData:
+                - - table
+                  - adhoc_filters: []
+                    applied_time_extras: {}
+                    datasource: 25__table
+                    metrics:
+                    - sum_revenue
+                    time_grain_sqla: P1M
+                    time_range: No filter
+                    url_params:
+                      dataset_id: '25'
+                      dataset_type: table
+                    viz_type: table
+              time_grain_sqla: P1M
+              time_range: No filter
+              timeseries_limit_metric: []
+              tooltipTimeFormat: smart_date
+              truncate_metric: true
+              url_params:
+                dataset_id: '25'
+                dataset_type: table
+                datasource_id: '25'
+                datasource_type: table
+                save_action: overwrite
+                slice_id: '85'
+              viz_type: echarts_timeseries_bar
+              x_axis_time_format: smart_date
+              x_axis_title_margin: 15
+              y_axis_bounds:
+              - null
+              - null
+              y_axis_format: SMART_NUMBER
+              y_axis_title_margin: 15
+              y_axis_title_position: Left
+        time_range: No filter
+        timeseries_limit_metric: []
+        url_params:
+          slice_id: '86'
+        viz_type: dist_bar
+        x_ticks_layout: auto
+        y_axis_bounds:
+        - null
+        - null
+        y_axis_format: SMART_NUMBER
+    - - big_number_total
+      - adhoc_filters: []
+        applied_time_extras: {}
+        dashboards: []
+        datasource: 25__table
+        granularity_sqla: date_day
+        header_font_size: 0.4
+        metric: sum_revenue
+        slice_id: 88
+        standardizedFormData:
+          controls:
+            columns: []
+            metrics: []
+          memorizedFormData:
+          - - table
+            - adhoc_filters: []
+              applied_time_extras: {}
+              datasource: 25__table
+              metrics:
+              - sum_revenue
+              time_grain_sqla: P1M
+              time_range: No filter
+              url_params:
+                dataset_id: '25'
+                dataset_type: table
+              viz_type: table
+          - - echarts_timeseries_bar
+            - adhoc_filters: []
+              annotation_layers: []
+              applied_time_extras: {}
+              color_scheme: supersetColors
+              comparison_type: values
+              dashboards: []
+              datasource: 25__table
+              emit_filter: true
+              forecastInterval: 0.8
+              forecastPeriods: 10
+              granularity_sqla: date_day
+              groupby: []
+              legendOrientation: top
+              legendType: scroll
+              metrics:
+              - sum_orderqty
+              only_total: true
+              orientation: vertical
+              rich_tooltip: true
+              row_limit: 10000
+              show_empty_columns: true
+              show_legend: true
+              slice_id: 85
+              standardizedFormData:
+                controls:
+                  columns: []
+                  metrics: []
+                memorizedFormData:
+                - - table
+                  - adhoc_filters: []
+                    applied_time_extras: {}
+                    datasource: 25__table
+                    metrics:
+                    - sum_revenue
+                    time_grain_sqla: P1M
+                    time_range: No filter
+                    url_params:
+                      dataset_id: '25'
+                      dataset_type: table
+                    viz_type: table
+              time_grain_sqla: P1M
+              time_range: No filter
+              timeseries_limit_metric: []
+              tooltipTimeFormat: smart_date
+              truncate_metric: true
+              url_params:
+                dataset_id: '25'
+                dataset_type: table
+                datasource_id: '25'
+                datasource_type: table
+                save_action: overwrite
+                slice_id: '85'
+              viz_type: echarts_timeseries_bar
+              x_axis_time_format: smart_date
+              x_axis_title_margin: 15
+              y_axis_bounds:
+              - null
+              - null
+              y_axis_format: SMART_NUMBER
+              y_axis_title_margin: 15
+              y_axis_title_position: Left
+          - - dist_bar
+            - adhoc_filters: []
+              applied_time_extras: {}
+              bottom_margin: auto
+              color_scheme: supersetColors
+              columns: []
+              dashboards: []
+              datasource: 25__table
+              granularity_sqla: date_day
+              groupby: []
+              metrics:
+              - sum_revenue_for_vista
+              order_desc: true
+              rich_tooltip: true
+              row_limit: 10000
+              show_legend: true
+              slice_id: 86
+              standardizedFormData:
+                controls:
+                  columns: []
+                  metrics: []
+                memorizedFormData:
+                - - table
+                  - adhoc_filters: []
+                    applied_time_extras: {}
+                    datasource: 25__table
+                    metrics:
+                    - sum_revenue
+                    time_grain_sqla: P1M
+                    time_range: No filter
+                    url_params:
+                      dataset_id: '25'
+                      dataset_type: table
+                    viz_type: table
+                - - echarts_timeseries_bar
+                  - adhoc_filters: []
+                    annotation_layers: []
+                    applied_time_extras: {}
+                    color_scheme: supersetColors
+                    comparison_type: values
+                    dashboards: []
+                    datasource: 25__table
+                    emit_filter: true
+                    forecastInterval: 0.8
+                    forecastPeriods: 10
+                    granularity_sqla: date_day
+                    groupby: []
+                    legendOrientation: top
+                    legendType: scroll
+                    metrics:
+                    - sum_orderqty
+                    only_total: true
+                    orientation: vertical
+                    rich_tooltip: true
+                    row_limit: 10000
+                    show_empty_columns: true
+                    show_legend: true
+                    slice_id: 85
+                    standardizedFormData:
+                      controls:
+                        columns: []
+                        metrics: []
+                      memorizedFormData:
+                      - - table
+                        - adhoc_filters: []
+                          applied_time_extras: {}
+                          datasource: 25__table
+                          metrics:
+                          - sum_revenue
+                          time_grain_sqla: P1M
+                          time_range: No filter
+                          url_params:
+                            dataset_id: '25'
+                            dataset_type: table
+                          viz_type: table
+                    time_grain_sqla: P1M
+                    time_range: No filter
+                    timeseries_limit_metric: []
+                    tooltipTimeFormat: smart_date
+                    truncate_metric: true
+                    url_params:
+                      dataset_id: '25'
+                      dataset_type: table
+                      datasource_id: '25'
+                      datasource_type: table
+                      save_action: overwrite
+                      slice_id: '85'
+                    viz_type: echarts_timeseries_bar
+                    x_axis_time_format: smart_date
+                    x_axis_title_margin: 15
+                    y_axis_bounds:
+                    - null
+                    - null
+                    y_axis_format: SMART_NUMBER
+                    y_axis_title_margin: 15
+                    y_axis_title_position: Left
+              time_range: No filter
+              timeseries_limit_metric: []
+              url_params:
+                slice_id: '86'
+              viz_type: dist_bar
+              x_ticks_layout: auto
+              y_axis_bounds:
+              - null
+              - null
+              y_axis_format: SMART_NUMBER
+        subheader_font_size: 0.15
+        time_format: smart_date
+        time_range: No filter
+        url_params:
+          save_action: saveas
+          slice_id: '88'
+        viz_type: big_number_total
+        y_axis_format: SMART_NUMBER
+  dashboards: []
+cache_timeout: null
+uuid: b8e3db1c-4f77-4588-9f7a-e335083183bc
+version: 1.0.0
+dataset_uuid: 032dd1cb-ebd9-4dd2-a10b-6feac92871d6

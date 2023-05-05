@@ -1,0 +1,32 @@
+slice_name: sum_order_qty
+viz_type: table
+params:
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: product_subcategory_name
+    operator: IS NOT NULL
+    operatorId: IS_NOT_NULL
+    comparator: null
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_jfa1glfnckb_xn2gkif1vqr
+  applied_time_extras: {}
+  datasource: 24__table
+  viz_type: table
+  time_range: No filter
+  granularity_sqla: start_date
+  groupby:
+  - product_subcategory_name
+  metrics:
+  - sum_order_qty
+  all_columns: []
+  percent_metrics: []
+  query_mode: aggregate
+  dashboards: []
+cache_timeout: null
+uuid: 74879e47-71b0-4901-bfcf-28f34c133b42
+version: 1.0.0
+dataset_uuid: ed5a974b-100d-46a1-ba2e-6e93a321584c

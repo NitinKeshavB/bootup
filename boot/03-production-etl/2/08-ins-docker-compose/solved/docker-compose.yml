@@ -1,0 +1,13 @@
+version: "3"
+services: 
+  api: 
+    image: hello_world_api:1.0
+    container_name: hello_world_api
+    ports: 
+      - 5000:5000
+  hello_world:
+    image: hello_world:1.0
+    depends_on: 
+      - api 
+    environment:
+      - API_ENDPOINT=hello_world_api:5000

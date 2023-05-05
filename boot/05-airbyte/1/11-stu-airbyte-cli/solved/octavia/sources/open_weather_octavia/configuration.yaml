@@ -1,0 +1,14 @@
+# Configuration for airbyte/source-openweather
+# Documentation about this connector can be found at https://docs.airbyte.io/integrations/sources/openweather
+resource_name: "open_weather_octavia"
+definition_type: source
+definition_id: d8540a80-6120-485d-b7d6-272bca477d9b
+definition_image: airbyte/source-openweather
+definition_version: 0.1.5
+
+configuration:
+  lat: "45.7603" 
+  lon: "-21.249107858038816" 
+  appid: a5b0a135e5c31d6081c3230c2f16daa4
+  units: metric
+

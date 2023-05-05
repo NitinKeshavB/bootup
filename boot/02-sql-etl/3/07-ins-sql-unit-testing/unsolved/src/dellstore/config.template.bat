@@ -1,0 +1,8 @@
+set source_db_user=value_here
+set source_db_password=value_here
+set source_db_server_name=value_here
+set source_db_database_name=value_here
+set target_db_user=value_here
+set target_db_password=value_here
+set target_db_server_name=value_here
+set target_db_database_name=value_here

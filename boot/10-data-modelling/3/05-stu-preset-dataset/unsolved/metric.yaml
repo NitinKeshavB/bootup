@@ -1,0 +1,5 @@
+metrics:
+  - question: What was my sales broken down by months? 
+  - question: How many quantities of products were sold broken down by category? 
+  - question: What was the average unit price of products by subcategory? 
+  - question: What was the total sales for the 'Vista' card type broken down by months?

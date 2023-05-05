@@ -1,0 +1,20 @@
+metrics:
+  - question: What was my sales broken down by months? 
+    name: sum_revenue
+    label: sum_revenue 
+    sql_expression: sum(revenue_wo_taxandfreight)
+
+  - question: How many quantities of products were sold broken down by category? 
+    name: sum_orderqty
+    label: sum_orderqty 
+    sql_expression: sum(orderqty)
+
+  - question: What was the average unit price of products by subcategory? 
+    name: avg_unitprice
+    label: avg_unitprice 
+    sql_expression: avg(unitprice)
+
+  - question: What was the total sales for the 'Vista' card type broken down by months?
+    name: sum_revenue_for_vista
+    label: sum_revenue_for_vista 
+    sql_expression: sum(case when lower(cardtype)='vista' then revenue_wo_taxandfreight else 0 end)
